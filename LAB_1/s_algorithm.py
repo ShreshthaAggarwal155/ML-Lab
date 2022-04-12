@@ -1,21 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 import pandas as pd
 import numpy as np
 
 
-# In[2]:
-
-
 data=pd.read_csv("data.csv")
 print(data)
-
-
-# In[3]:
 
 
 d=np.array(data)[:,:-1]
@@ -23,8 +12,6 @@ print("The attributes are : \n",d)
 target=np.array(data)[:,-1]
 print("\nThe target is : ",target)
 
-
-# In[4]:
 
 
 def train(c,t):
@@ -44,14 +31,5 @@ def train(c,t):
   return specific_hypothesis
 
 
-# In[5]:
-
-
 print("The final hypothesis is : ",train(d,target))
-
-
-# In[ ]:
-
-
-
 
